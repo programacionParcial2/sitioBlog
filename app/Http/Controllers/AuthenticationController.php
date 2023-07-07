@@ -26,4 +26,9 @@ class AuthenticationController extends Controller
             return redirect("/login")->with("error",true);
         return redirect("/");
     }
+
+    public function Logout(Request $request){
+        Auth::logout();
+        return redirect("/");
+    }
 }

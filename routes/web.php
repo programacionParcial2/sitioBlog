@@ -29,3 +29,4 @@ Route::get('/register', function () {
 
 Route::post("/register",[AuthenticationController::class,"Register"]);
 Route::post("/login",[AuthenticationController::class,"Login"]);
+Route::get("/logout",[AuthenticationController::class,"Logout"])-> middleware(UsersAuthentication::class);
