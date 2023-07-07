@@ -9,6 +9,7 @@
     <a href="/">Principal</a>
     @if(Auth::check())
     Bienvenido {{ Auth::user() -> name }}
+    <a href="/post">Insertar Post</a>
     <a href="/profile">Ver perfil</a>
     <a href="/logout">Cerrar sesión</a>
     @else 
