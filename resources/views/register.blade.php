@@ -11,7 +11,7 @@
 
     </form>
 
-    @if(session('registrado'))
+    @if(session('registered'))
         <b>Usuario registrado</b>
     @endif
 

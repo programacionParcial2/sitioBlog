@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthenticationController;
+
+use App\Http\Middleware\UsersAuthentication;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,4 +27,4 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::post("/register",[AuthenticationController::class,"Registrar"]);
+Route::post("/register",[AuthenticationController::class,"Register"]);
