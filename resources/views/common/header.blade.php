@@ -7,7 +7,13 @@
 </head>
 <body>
     <a href="/">Principal</a>
+    @if(Auth::check())
+    Bienvenido {{ Auth::user() -> name }}
     <a href="/profile">Ver perfil</a>
     <a href="/logout">Cerrar sesión</a>
+    @else 
     <a href="/login">Iniciar sesion</a>
     <a href="/register">Registrarse</a>
+    @endif
+    
+   

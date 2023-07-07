@@ -28,3 +28,4 @@ Route::get('/register', function () {
 });
 
 Route::post("/register",[AuthenticationController::class,"Register"]);
+Route::post("/login",[AuthenticationController::class,"Login"]);

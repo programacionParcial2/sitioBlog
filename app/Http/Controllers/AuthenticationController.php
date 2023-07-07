@@ -19,4 +19,11 @@ class AuthenticationController extends Controller
         return redirect("/register")->with("registered",true);
 
     }
+
+    public function Login(Request $request){
+        $credenciales = $request -> only(["email","password"]);
+        if(!Auth::attempt($credenciales))
+            return redirect("/login")->with("error",true);
+        return redirect("/");
+    }
 }
