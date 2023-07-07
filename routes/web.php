@@ -14,12 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('principal');
+    return view('mainPage');
 });
 
 Route::get('/login', function () {
     return view('login');
 });
 Route::get('/register', function () {
-    return view('registrar');
+    return view('register');
 });
+
+Route::post("/register",[AuthenticationController::class,"Registrar"]);

@@ -1,13 +1,13 @@
 
 @include('common/header')
 
-    <h1>Login</h1>
+    <h1>Iniciar Sesión</h1>
     <form action="/login" method="post">
         @csrf
-        Email: <input type="text" name="email" id=""> <br>
-        Password: <input type="password" name="password" id=""> <br>
+        Correo: <input type="text" name="email" id=""> <br>
+        Contraseña: <input type="password" name="password" id=""> <br>
 
-        <input type="submit" value="Iniciar Sesion">
+        <input type="submit" value="Acceder">
 
     </form>
 

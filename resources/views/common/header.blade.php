@@ -7,7 +7,7 @@
 </head>
 <body>
     <a href="/">Principal</a>
-    <a href="/perfil">Ver perfil</a>
+    <a href="/profile">Ver perfil</a>
     <a href="/logout">Cerrar sesión</a>
     <a href="/login">Iniciar sesion</a>
     <a href="/register">Registrarse</a>
