@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SitioBlog</title>
 </head>
 <body>
     <a href="/">Principal</a>
     <a href="/perfil">Ver perfil</a>
     <a href="/logout">Cerrar sesión</a>
     <a href="/login">Iniciar sesion</a>
-    <a href="/login">Registrarse</a>
+    <a href="/register">Registrarse</a>
