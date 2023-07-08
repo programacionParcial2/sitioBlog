@@ -35,5 +35,7 @@ Route::get('/post', function () {
 Route::post("/register",[AuthenticationController::class,"Register"]);
 Route::post("/login",[AuthenticationController::class,"Login"]);
 Route::get("/logout",[AuthenticationController::class,"Logout"])-> middleware(UsersAuthentication::class);
-Route::post("/createPost",[PostController::class,"CreatePost"])-> middleware(UsersAuthentication::class);
+
+Route::post("/createPost",[PostController::class,"CreatePost"])-> middleware(UsersAuthentication::class); 
+Route::post("/ModificarPost/{id}",[PostController::class,"ModificarPost"])-> middleware(UsersAuthentication::class);
 Route::get('/listPost',[PostController::class,"ListPost"]);

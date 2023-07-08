@@ -20,13 +20,22 @@ class PostController extends Controller
 
     }
 
- public function listPost(Request $request)
+ public function ListPost(Request $request)
 {
     $listaPosts = Post::with("users")->get();
     return view("listPost", [
         "posts" => $listaPosts
     ]);
 }
+
+ public function ModificarPost(Request $request){
+        $post = Post::findOrFail($request -> post("id"));
+        $post -> title = $request -> post("title");
+        $post -> body = $request -> post("body");
+        $post -> save();
+
+        return redirect("/listPost")->with("modified",true);
+    }
 
 } 
 
