@@ -4,7 +4,7 @@
     <form action="/createPost" method="post">
         @csrf
         Título: <input type="text" name="title" id=""><br>
-        Cuerpo: <textarea id="longtext" name="body" rows="10" cols="80"></textarea><br>
+        Cuerpo: <textarea type="longtext" name="body" rows="10" cols="80" id=""></textarea><br>
         <input type="submit" value="Publicar">
 
     </form>
