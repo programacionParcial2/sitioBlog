@@ -19,6 +19,15 @@ class PostController extends Controller
         return redirect("/post")->with("blogPublished",true);
 
     }
+
+ public function listPost(Request $request)
+{
+    $listaPosts = Post::with("users")->get();
+    return view("listPost", [
+        "posts" => $listaPosts
+    ]);
 }
+
+} 
 
 

@@ -7,6 +7,7 @@
 </head>
 <body>
     <a href="/">Principal</a>
+    <a href="/listPost">Listado de Posts</a>
     @if(Auth::check())
     Bienvenido {{ Auth::user() -> name }}
     <a href="/post">Insertar Post</a>

@@ -10,8 +10,10 @@ class Post extends Model
 {
     use HasFactory;
     use SoftDeletes;
-    
-    public function user(){
+
+    public function users(){
         return $this->belongsTo(User::class);
     }
 }
+
+
